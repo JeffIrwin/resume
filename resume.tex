@@ -1,0 +1,109 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,letterpaper]{article}
+
+% Set the page margins.
+\usepackage[letterpaper,margin=0.75in]{geometry}
+
+% Setup the language.
+%\usepackage[english]{babel}
+%\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+% title on top of the document
+\maintitle{Jeff Irwin}{}{Last updated on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+
+\noindent
+\href{mailto:ENV\_EMAIL}{ENV\_EMAIL}\sbull
+ENV\_MOBILE\sbull
+\href{https://github.com/JeffIrwin}{github.com/JeffIrwin}
+%\sbull\href{https://www.linkedin.com/in/jeff-irwin-54967332/}{https://www.linkedin.com/in/jeff-irwin-54967332/}
+
+\noindent
+ENV\_ADDRESSL1\sbull
+ENV\_ADDRESSL2\sbull
+ENV\_ADDRESSL3
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+\roottitle{Education}
+
+\noindent \href{https://www.psu.edu/}{The Pennsylvania State University} \hfill \emph{May 2015} \break
+\textbf{Master of Science in Mechanical Engineering} \hfill Cumulative GPA:  3.89 / 4.00
+
+\vspace{1em}
+\noindent \href{https://www.psu.edu/}{The Pennsylvania State University} \hfill \emph{May 2013} \break
+\textbf{Bachelor of Science in Mechanical Engineering} \hfill Cumulative GPA:  3.94 / 4.00
+
+\roottitle{Relevant Courses}
+Non-Linear FEA, Thermodynamics of Materials, Solid Mechanics, Numerical Methods in Fluid Dynamics
+
+\roottitle{Computer Skills}
+Fortran, C++, Git, Bash, MATLAB, Java, Python, Abaqus, SolidWorks, Windows and Linux OS
+
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Experience}
+
+\noindent \textbf{Lead Software Developer} \hfill 2015 -- 2016 \break
+\href{http://www.pancomputing.com}{Pan Computing} \hfill \textsc{State College, PA}
+\begin{itemize}
+	\item Designed databases and implemented encryption algorithms to store and protect proprietary data
+	\item Administered file servers for end-users to download and install CUBES\textsuperscript\textregistered\ software
+	\item Ported CUBES\textsuperscript\textregistered\ command line interface to Windows OS and developed a graphical user interface
+	\item Integrated CUBES\textsuperscript\textregistered\ with Reprise License Manager for floating licensing
+	\item Developed a geometric compensation technique to use the results of CUBES\textsuperscript\textregistered\ to reduce distortion
+	\item Verified and validated CUBES\textsuperscript\textregistered\ and assisted end-users
+\end{itemize}
+
+\noindent \textbf{Consultant} \hfill 2015 -- 2016 \break
+\href{http://www.pancomputing.com}{Pan Computing} \hfill \textsc{State College, PA}
+\begin{itemize}
+	\item Tested CUBES\textsuperscript\textregistered\ software and wrote examples manuals
+\end{itemize}
+
+
+\noindent \textbf{Research Assistant} \hfill 2012 -- 2015 \break
+\href{https://www.psu.edu}{The Pennsylvania State University} \hfill \textsc{State College, PA}
+\begin{itemize}
+	\item Used the finite element method to model additive manufacturing and compared results to experimental data
+	\item Developed a new model of laser heat input to significantly speed up simulations
+	\item Wrote Fortran and C++ codes for automatic mesh generation and adaptive mesh refinement
+	\item Implemented algorithms to simulate microstructural evolution in Ti-6Al-4V during additive manufacturing
+	\item Wrote MATLAB and Fortran codes for pre-processing and post-processing of simulation data
+	\item Worked with Dr. Pan Michaleris and other graduate and undergraduate researchers
+\end{itemize}
+
+\spacedhrule{0.5em}{0.5em}
+\roottitle{Journal Publications}
+
+\spacedhrule{0.5em}{0.5em}
+\roottitle{Conference Publications}
+
+\roottitle{Conference Abstracts}
+
+\spacedhrule{0.5em}{0.5em}
+\roottitle{Activities and Awards}
+
+\end{document}
+
