@@ -9,7 +9,7 @@
 
 
 % Start a document with the here given default font size and paper size.
-\documentclass[10pt,letterpaper]{article}
+\documentclass[10.5pt,letterpaper]{article}
 
 % Set the page margins.
 \usepackage[letterpaper,margin=0.75in]{geometry}
@@ -20,6 +20,12 @@
 
 % Makes resume-specific commands available.
 \usepackage{resume}
+
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parskip}{0em}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
 
 \begin{document}  % begin the content of the document
 \sloppy  % this to relax whitespacing in favour of straight margins
@@ -68,6 +74,7 @@ Fortran, C++, Git, Bash, MATLAB, Java, Python, Abaqus, SolidWorks, Windows and L
 \noindent \textbf{Lead Software Developer} \hfill 2015 -- 2016 \break
 \href{http://www.pancomputing.com}{Pan Computing} \hfill \textsc{State College, PA}
 \begin{itemize}
+	\setlength{\parskip}{0em}
 	\item Designed databases and implemented encryption algorithms to store and protect proprietary data
 	\item Administered file servers for end-users to download and install CUBES\textsuperscript\textregistered\ software
 	\item Ported CUBES\textsuperscript\textregistered\ command line interface to Windows OS and developed a graphical user interface
@@ -79,12 +86,14 @@ Fortran, C++, Git, Bash, MATLAB, Java, Python, Abaqus, SolidWorks, Windows and L
 \noindent \textbf{Consultant} \hfill 2015 -- 2016 \break
 \href{http://www.pancomputing.com}{Pan Computing} \hfill \textsc{State College, PA}
 \begin{itemize}
+	\setlength{\parskip}{0em}
 	\item Tested CUBES\textsuperscript\textregistered\ software and wrote examples manuals
 \end{itemize}
 
 \noindent \textbf{Research Assistant} \hfill 2012 -- 2015 \break
 \href{https://www.psu.edu}{The Pennsylvania State University} \hfill \textsc{State College, PA}
 \begin{itemize}
+	\setlength{\parskip}{0em}
 	\item Used the finite element method to model additive manufacturing and compared results to experimental data
 	\item Developed a new model of laser heat input to significantly speed up simulations
 	\item Wrote Fortran and C++ codes for automatic mesh generation and adaptive mesh refinement
@@ -96,24 +105,35 @@ Fortran, C++, Git, Bash, MATLAB, Java, Python, Abaqus, SolidWorks, Windows and L
 \spacedhrule{0.5em}{-0.5em}
 \roottitle{Journal Publications}
 
-\begin{enumerate}
-	\item Denlinger, Erik R., Jeff Irwin, and Pan Michaleris. "Thermomechanical modeling of additive manufacturing large parts." \emph{Journal of Manufacturing Science and Engineering} 136.6 (2014): 061007.
-	\item Kriczky, Dennis A., Jeff Irwin, Edward W. Reutzel, Pan Michaleris, Abdalla R. Nassar, and James Craig. "3D spatial reconstruction of thermal characteristics in directed energy deposition through optical thermal imaging." \emph{Journal of Materials Processing Technology} 221 (2015): 172-186.
-	\item Irwin, Jeff, and Pan Michaleris. "A Line Heat Input Model for Additive Manufacturing." \emph{Journal of Manufacturing Science and Engineering} 138.11 (2016): 111004.
-	\item Irwin, Jeff, Edward W. Reutzel, Pan Michaleris, Jay Keist, and Abdalla R. Nassar. "Predicting Microstructure from Thermal History during Additive Manufacturing for Ti-6Al-4V." \emph{Journal of Manufacturing Science and Engineering} 138.11 (2016): 111007.
+\begin{enumerate}[leftmargin=*]
+	\setlength{\parskip}{0em}
+	\item Denlinger, Erik R., Jeff Irwin, and Pan Michaleris. ``Thermomechanical modeling of additive manufacturing large parts.'' \emph{Journal of Manufacturing Science and Engineering} 136.6 (2014): 061007.
+	\item Kriczky, Dennis A., Jeff Irwin, Edward W. Reutzel, Pan Michaleris, Abdalla R. Nassar, and James Craig. ``3D spatial reconstruction of thermal characteristics in directed energy deposition through optical thermal imaging.'' \emph{Journal of Materials Processing Technology} 221 (2015): 172-186.
+	\item Irwin, Jeff, and Pan Michaleris. ``A Line Heat Input Model for Additive Manufacturing.'' \emph{Journal of Manufacturing Science and Engineering} 138.11 (2016): 111004.
+	\item Irwin, Jeff, Edward W. Reutzel, Pan Michaleris, Jay Keist, and Abdalla R. Nassar. ``Predicting Microstructure from Thermal History during Additive Manufacturing for Ti-6Al-4V.'' \emph{Journal of Manufacturing Science and Engineering} 138.11 (2016): 111007.
 \end{enumerate}
 
 
 \spacedhrule{0.5em}{-0.5em}
 \roottitle{Conference Publications}
-\begin{enumerate}
-	\item J. Irwin and P. Michaleris. "A Line Heat Input Model for Additive Manufacturing." Manufacturing Science and Engineering Conference. Hilton Charlotte University Place, Charlotte, NC. 10 June 2015.
-	\item G. Loughnane, S. Kuntz, N. Klingbeil, J. Sosa, J. Irwin, A. Nassar, and E. Reutzel. "Application of a microstructural characterization uncertainty quantification framework to Widmanst\"atten $\alpha$-laths in additive manufactured Ti-6Al-4V." Solid Freeform Fabrication Symposium. AT\&T Executive Education and Conference Center, Austin TX. 10 August 2015.
+\begin{enumerate}[leftmargin=*]
+	\setlength{\parskip}{0em}
+	\item J. Irwin and P. Michaleris. ``A Line Heat Input Model for Additive Manufacturing.'' Manufacturing Science and Engineering Conference. Hilton Charlotte University Place, Charlotte, NC. 10 June 2015.
+	\item G. Loughnane, S. Kuntz, N. Klingbeil, J. Sosa, J. Irwin, A. Nassar, and E. Reutzel. ``Application of a microstructural characterization uncertainty quantification framework to Widmanst\"atten $\alpha$-laths in additive manufactured Ti-6Al-4V.'' Solid Freeform Fabrication Symposium. AT\&T Executive Education and Conference Center, Austin TX. 10 August 2015.
 \end{enumerate}
 
 \roottitle{Conference Abstracts}
+\begin{enumerate}[leftmargin=*]
+	\setlength{\parskip}{0em}
+	\item J. Irwin and P. Michaleris. ``A Line Heat Input Model for Additive Manufacturing.'' Materials Science \& Technology. David L. Lawrence Convention Center, Pittsburgh, PA. 14 October 2014.
+	\item J. Irwin, E. Reutzel, P. Michaleris, J. Keist, A. Nassar, and G. Loughnane. ``Linking Thermal History to Microstructure during AM of Ti-6Al-4V.'' Solid Freeform Fabrication Symposium. AT\&T Executive Education and Conference Center, Austin TX. 10 August 2015.
+	\item 1 A. Dunbar, E. Denlinger, P. Michaleris, P. Guerrier, R. Buchannan, J. Heigel, J. Jones. ``In Situ Temperature and Distortion Measurements for PBF Model Validation.'' Solid Freeform Fabrication Symposium. AT\&T Executive Education and Conference Center, Austin TX. 10 August 2015.
+	\item J. Irwin, E. Reutzel, P. Michaleris, J. Keist, A. Nassar, and G. Loughnane. ``Linking Thermal History to Microstructure during AM of Ti-6Al-4V.'' Materials Science \& Technology. Greater Columbus Convention Center, Columbus, OH. 5 October 2015.
+	\item \footnote{Presented by J. Irwin} A. Dunbar, E. Denlinger, P. Michaleris, P. Guerrier, R. Buchannan, J. Heigel, J. Jones. ``In Situ Temperature and Distortion Measurements for Powder-Bed Fusion Model Validation.'' Materials Science \& Technology. Greater Columbus Convention Center, Columbus, OH. 5 October 2015.
+	\item D. Corbin, J. Irwin, A. Nassar, E. Reutzel, and P. Michaleris. ``Temperature Calibration of an Additive Manufacturing Process-Monitoring Thermal Imaging System.'' Materials Science \& Technology. Greater Columbus Convention Center, Columbus, OH. 5 October 2015.
+\end{enumerate}
 
-\spacedhrule{0.5em}{0.5em}
+\spacedhrule{0.5em}{-0.5em}
 \roottitle{Activities and Awards}
 
 \end{document}
